@@ -2,17 +2,26 @@
     margin: 0 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: grey;
+    color: #888787;
     cursor: pointer;
     border: 3px solid transparent;
 
 }
-.HeaderOptionTitle{
+.icons{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+
+.title{
     font-size: 12px;
+    font-weight: 400;
 }
 .HeaderOption:hover{
-    color: black;
-    border-bottom: 3px black solid;
+    color: #191919;
+    border-bottom: 3px #191919 solid;
 
 }

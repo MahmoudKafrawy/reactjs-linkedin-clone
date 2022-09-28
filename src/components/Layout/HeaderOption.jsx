@@ -1,10 +1,13 @@
+import { Avatar } from "@mui/material";
 import React from "react";
 import styles from "../../styles/HeaderOption.module.css";
-const HeaderOption = ({ title, Icon }) => {
+
+const HeaderOption = ({ avatar, title, Icon }) => {
   return (
     <div className={styles.HeaderOption}>
-      <div className={styles.HeaderOptionIcon}>{Icon && <Icon />}</div>
-      <div className={styles.HeaderOptionTitle}>{title}</div>
+      {Icon && <Icon className={styles.icons} />}
+      {avatar && <Avatar className={styles.icons} src={avatar} />}
+      <div className={styles.title}>{title}</div>
     </div>
   );
 };

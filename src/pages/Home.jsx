@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../components/Layout/Header";
+import styles from "../styles/Home.module.css";
 
 const Home = () => {
-  return <div></div>;
+  return <div className={styles.home}></div>;
 };
 
 export default Home;
