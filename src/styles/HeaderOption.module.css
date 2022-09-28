@@ -9,16 +9,23 @@
     border: 3px solid transparent;
 
 }
+.HeaderOption:nth-child(6){
+    border-right: 1px solid #888787;
+    padding-right: 20px;
+}
 .icons{
-    width: 30px;
-    height: 30px;
+    width: 35px !important;
+    height: 35px !important;
     object-fit: contain;
 }
-
-
 .title{
     font-size: 12px;
     font-weight: 400;
+}
+@media (max-width:939px) {
+    .title{
+        display: none;
+    }
 }
 .HeaderOption:hover{
     color: #191919;
